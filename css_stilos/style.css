@@ -1,0 +1,1164 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #35252B;
+    background: #FFF9FB;
+    line-height: 1.6;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+a {
+    transition: 0.3s ease;
+}
+
+/* 2. ENCABEZADO COMPARTIDO */
+header,
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 18px 6%;
+    background: #570019;
+    color: white;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #570019;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: #800020;
+    color: #F7C6D5;
+}
+
+/* 3. PORTADA GENERAL */
+.hero {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 8%;
+    color: white;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.2;
+}
+
+.hero p {
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+/* 4. BOTONES GENERALES */
+.boton,
+button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #800020;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background: #B31346;
+    transform: translateY(-2px);
+}
+
+/* 5. PRESENTACIONES Y SECCIONES */
+.presentacion,
+section {
+    scroll-margin-top: 80px;
+}
+
+.presentacion {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.presentacion p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    line-height: 1.8;
+}
+
+/* 6. CUADRÍCULAS COMPARTIDAS */
+.carreras-grid,
+.plataformas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 30px 6%;
+}
+
+/* 7. TARJETAS GENERALES */
+.carrera,
+.plataforma {
+    padding: 25px;
+    background: white;
+    border: 1px solid #F0D4DE;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(87, 0, 25, 0.08);
+    transition: 0.3s ease;
+}
+
+.carrera:hover,
+.plataforma:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(87, 0, 25, 0.14);
+}
+
+.carrera h2,
+.carrera h3,
+.plataforma h2,
+.plataforma h3 {
+    color: #800020;
+}
+
+
+
+/* 8. CONTACTO */
+#contacto {
+    padding: 50px 8%;
+    background: #F7E0E8;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Trajetas de avisos */
+.aviso-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 30px 6%;
+}
+
+.aviso {
+    width: 500px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #F0D4DE;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(87, 0, 25, 0.08);
+    transition: 0.3s ease;
+}
+
+.aviso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(87, 0, 25, 0.14);
+}
+
+.aviso img {
+    height: 200px;
+}
+.aviso h2 {
+    font-size: 20px;
+}
+
+.aviso p {
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   INTELIGENCIA ARTIFICIAL - IA
+   ========================================== */
+
+.ia-hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.ia-seccion {
+    padding: 60px 8%;
+    background: #FFF9FB;
+}
+
+.ia-seccion h2 {
+    color: #800020;
+}
+
+.ia-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.ia-tarjeta {
+    padding: 25px;
+    background: white;
+    border: 1px solid #F0D4DE;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(87, 0, 25, 0.08);
+}
+
+.ia-tarjeta h3 {
+    color: #800020;
+}
+
+.ia-icono {
+    font-size: 38px;
+}
+
+.ia-importancia {
+    padding: 65px 8%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.ia-importancia h2 {
+    font-size: clamp(26px, 4vw, 35px);
+    margin-bottom: 20px;
+}
+
+.ia-importancia > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.ia-lista {
+    max-width: 700px;
+    margin: 25px auto 0;
+    text-align: left;
+    line-height: 2;
+}
+
+.ia-lista p {
+    color: #FCEAF0;
+}
+
+.ia-video-seccion {
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.ia-video-seccion video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+.ia-laptop {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 15px 15px 0;
+    background: #292329;
+    border-radius: 15px 15px 5px 5px;
+}
+
+.ia-pantalla {
+    overflow: hidden;
+    background: #100B0D;
+    border-radius: 8px;
+}
+
+.ia-pantalla video {
+    display: block;
+    width: 100%;
+}
+
+
+.ia-regresar {
+    padding: 45px 6%;
+    text-align: center;
+    background: #F7E0E8;
+}
+
+.ia-regresar h2 {
+    color: #570019;
+}
+
+.ia-regresar p {
+    color: #66545B;
+}
+
+.ia-boton-guinda {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    color: white;
+    background: #800020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ia-boton-guinda:hover {
+    background: #B31346;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   CONTABILIDAD
+   ========================================== */
+
+.conta-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    color: white;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.conta-contenido {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.conta-etiqueta {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #F7C6D5;
+    border-radius: 30px;
+    color: #FCEAF0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.conta-hero h1 {
+    font-size: clamp(35px, 6vw, 58px);
+    line-height: 1.15;
+}
+
+.conta-hero h1 span {
+    display: block;
+    margin-top: 12px;
+    color: #F7C6D5;
+    font-size: clamp(21px, 3vw, 32px);
+}
+
+.conta-hero p {
+    max-width: 650px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.conta-boton,
+.conta-boton-guinda {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.conta-boton {
+    color: #800020;
+    background: white;
+}
+
+.conta-boton:hover {
+    background: #F7C6D5;
+    transform: translateY(-2px);
+}
+
+.conta-seccion {
+    padding: 65px 8%;
+    background: #FFF9FB;
+}
+
+.conta-presentacion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.conta-presentacion > p {
+    color: #66545B;
+    line-height: 1.9;
+}
+
+.conta-titulo {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.conta-titulo h2 {
+    color: #800020;
+    font-size: clamp(27px, 4vw, 36px);
+}
+
+.conta-titulo p {
+    color: #66545B;
+}
+
+.conta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.conta-tarjeta {
+    padding: 28px 24px;
+    background: white;
+    border: 1px solid #F0D4DE;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(87, 0, 25, 0.08);
+    transition: 0.3s ease;
+}
+
+.conta-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(87, 0, 25, 0.14);
+}
+
+.conta-icono {
+    font-size: 38px;
+}
+
+.conta-tarjeta h3 {
+    color: #800020;
+}
+
+.conta-tarjeta p {
+    color: #66545B;
+    line-height: 1.8;
+}
+
+.conta-importancia {
+    padding: 65px 8%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.conta-importancia h2 {
+    font-size: clamp(26px, 4vw, 35px);
+}
+
+.conta-importancia > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.conta-lista {
+    max-width: 750px;
+    margin: 25px auto 0;
+    text-align: left;
+    line-height: 1.9;
+}
+
+.conta-lista p {
+    color: #FCEAF0;
+}
+
+.conta-regresar {
+    padding: 45px 6%;
+    text-align: center;
+    background: #F7E0E8;
+}
+
+.conta-regresar h2 {
+    color: #570019;
+}
+
+.conta-regresar p {
+    color: #66545B;
+}
+
+.conta-boton-guinda {
+    color: white;
+    background: #800020;
+}
+
+.conta-boton-guinda:hover {
+    background: #B31346;
+    transform: translateY(-2px);
+}
+
+/* 9. PIE DE PÁGINA COMPARTIDO */
+footer {
+    padding: 25px 6%;
+    color: white;
+    background: #25030D;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* ==========================================
+   RESPONSIVE - TABLETAS
+   ========================================== */
+
+@media (max-width: 850px) {
+    .carreras-grid,
+    .plataformas-grid,
+    .ia-grid,
+    .conta-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    header,
+    .header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+   ========================================== */
+
+@media (max-width: 520px) {
+    header,
+    .header {
+        padding: 16px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .hero,
+    .ia-hero {
+        min-height: 350px;
+        padding: 55px 6%;
+    }
+
+    .presentacion,
+    .ia-seccion,
+    .conta-seccion {
+        padding: 45px 6%;
+    }
+
+    .carreras-grid,
+    .plataformas-grid,
+    .ia-grid,
+    .conta-grid,
+    .contacto-grid {
+        grid-template-columns: 1fr;
+        padding: 25px 6%;
+    }
+
+    .conta-hero {
+        min-height: 350px;
+        padding: 55px 6%;
+    }
+
+    .ia-importancia,
+    .conta-importancia {
+        padding: 45px 6%;
+    }
+
+    .ia-video-seccion {
+        padding: 35px 6%;
+    }
+
+    .ia-laptop {
+        padding: 10px 10px 0;
+    }
+
+    .ia-base-laptop {
+        width: 95%;
+        margin-left: -2.5%;
+    }
+}
+/* ==========================================
+   CIBERSEGURIDAD
+   ========================================== */
+
+.ciber-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    color: white;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.ciber-contenido {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ciber-etiqueta {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #F7C6D5;
+    border-radius: 30px;
+    color: #FCEAF0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.ciber-hero h1 {
+    font-size: clamp(35px, 6vw, 58px);
+    line-height: 1.15;
+}
+
+.ciber-hero h1 span {
+    display: block;
+    margin-top: 12px;
+    color: #F7C6D5;
+    font-size: clamp(21px, 3vw, 32px);
+}
+
+.ciber-hero p {
+    max-width: 650px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.ciber-boton,
+.ciber-boton-guinda {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ciber-boton {
+    color: #800020;
+    background: white;
+}
+
+.ciber-boton:hover {
+    background: #F7C6D5;
+    transform: translateY(-2px);
+}
+
+.ciber-seccion {
+    padding: 65px 8%;
+    background: #FFF9FB;
+}
+
+.ciber-presentacion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ciber-presentacion > p {
+    color: #66545B;
+    line-height: 1.9;
+}
+
+.ciber-titulo {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.ciber-titulo h2 {
+    color: #800020;
+    font-size: clamp(27px, 4vw, 36px);
+}
+
+.ciber-titulo p {
+    color: #66545B;
+}
+
+.ciber-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.ciber-tarjeta {
+    padding: 28px 24px;
+    background: white;
+    border: 1px solid #F0D4DE;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(87, 0, 25, 0.08);
+    transition: 0.3s ease;
+}
+
+.ciber-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(87, 0, 25, 0.14);
+}
+
+.ciber-icono {
+    font-size: 38px;
+}
+
+.ciber-tarjeta h3 {
+    color: #800020;
+}
+
+.ciber-tarjeta p {
+    color: #66545B;
+    line-height: 1.8;
+}
+
+.ciber-importancia {
+    padding: 65px 8%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #25030D, #570019, #800020);
+}
+
+.ciber-importancia h2 {
+    font-size: clamp(26px, 4vw, 35px);
+}
+
+.ciber-importancia > p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.ciber-lista {
+    max-width: 750px;
+    margin: 25px auto 0;
+    text-align: left;
+    line-height: 1.9;
+}
+
+.ciber-lista p {
+    color: #FCEAF0;
+}
+
+.ciber-regresar {
+    padding: 45px 6%;
+    text-align: center;
+    background: #F7E0E8;
+}
+
+.ciber-regresar h2 {
+    color: #570019;
+}
+
+.ciber-regresar p {
+    color: #66545B;
+}
+
+.ciber-boton-guinda {
+    color: white;
+    background: #800020;
+}
+
+.ciber-boton-guinda:hover {
+    background: #B31346;
+    transform: translateY(-2px);
+}
+
+/* AJUSTES PARA TABLETAS Y CELULARES */
+
+@media (max-width: 850px) {
+    .ciber-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .ciber-hero {
+        min-height: 350px;
+        padding: 55px 6%;
+    }
+
+    .ciber-seccion {
+        padding: 45px 6%;
+    }
+
+    .ciber-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ciber-importancia {
+        padding: 45px 6%;
+    }
+}
+/* ==========================================
+   INTELIGENCIA ARTIFICIAL - AJUSTES COMPLETOS
+   ========================================== */
+
+.ia-contenido {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ia-etiqueta {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #F7C6D5;
+    border-radius: 30px;
+    color: #FCEAF0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.ia-hero h1 {
+    font-size: clamp(35px, 6vw, 58px);
+    line-height: 1.15;
+}
+
+.ia-hero h1 span {
+    display: block;
+    margin-top: 12px;
+    color: #F7C6D5;
+    font-size: clamp(21px, 3vw, 32px);
+}
+
+.ia-hero p {
+    max-width: 650px;
+    color: #FCEAF0;
+    line-height: 1.8;
+}
+
+.ia-boton {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    background: white;
+    color: #800020;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ia-boton:hover {
+    background: #F7C6D5;
+    transform: translateY(-2px);
+}
+
+.ia-titulo {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.ia-titulo h2 {
+    color: #800020;
+    font-size: clamp(27px, 4vw, 36px);
+}
+
+.ia-titulo p {
+    color: #66545B;
+}
+
+.ia-presentacion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ia-presentacion > p {
+    color: #66545B;
+    line-height: 1.9;
+}
+
+.ia-video-seccion {
+    padding: 55px 6%;
+    text-align: center;
+    background: #F7E0E8;
+}
+
+.ia-video-seccion .ia-titulo h2 {
+    color: #570019;
+}
+
+.ia-video-seccion .ia-titulo p {
+    color: #66545B;
+}
+
+.ia-laptop {
+    width: 50%;
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 15px 15px 0;
+    background: #292329;
+    border-radius: 15px 15px 5px 5px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ia-pantalla {
+    overflow: hidden;
+    background: #100B0D;
+    border-radius: 8px;
+}
+
+.ia-pantalla video {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    background: #100B0D;
+}
+
+.ia-base-laptop {
+    width: 60%;
+    height: 15px;
+    margin: auto;
+    margin-top: 0%;
+    background: linear-gradient(#C8C5C7, #777177);
+    border-radius: 0 0 20px 20px;
+}
+
+.ia-regresar {
+    padding: 45px 6%;
+    text-align: center;
+    background: #F7E0E8;
+}
+
+.ia-regresar h2 {
+    color: #570019;
+}
+
+.ia-regresar p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #66545B;
+}
+
+.ia-boton-guinda {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 8px;
+    color: white;
+    background: #800020;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ia-boton-guinda:hover {
+    background: #B31346;
+    transform: translateY(-2px);
+}
+
+
+/* Dual header */
+.dual span {
+    color: #444;
+}
+
+/* Codigoo de el header de ciber */
+header.ciber {
+    background-image: url('ciberseguridad.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+/* Codigoo de el header de conta y logistica*/
+header.logistica, .conta {
+    background-image: url('logisticaYconta.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+
+/* Codigoo de el header de conta */
+header.conta {
+    background-image: url('ia.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 50%; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+   }
+
+
+/* Codigoo de el header de ia */
+header.ia {
+    background-image: url('ia.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+
+/* Codigoo de el header de mecanica */
+header.mecanica {
+    background-image: url('mecanica.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+/* Codigoo de el header de hospedaje */
+header.hospedaje {
+    background-image: url('hospedaje.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+/* Codigoo de el header de hospedaje */
+header.alimentos {
+    background-image: url('alimentos.jpeg');
+
+    background-position: center; /* para que se centre */
+    background-repeat: no-repeat;
+    height: 130px; /* tienes que darle altura si no, no se ve */
+    width: 100%;
+}
+
+/* Modulos de carreras */
+
+h2.modulos{
+  text-align: center;
+  color: #1e5a7a;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.carrera1{
+    text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fila{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.modulo{
+  min-width: 140px;
+  width: 140px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 15px 0 15px 0; /* la forma de la imagen */
+  padding: 10px;
+}
+.modulo span{
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+/* Colores exactos de la foto */
+.m1{ background: #124d9b; }
+.m2{ background: #2eb24e; }
+.m3{ background: #ed7e26; }
+.m4{ background: #8c1e42; }
+.m5{ background: #5e3ab8; }
+
+.info{
+  flex: 1;
+}
+.info b{
+  display: block;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.info p{
+  font-size: 14px;
+  color: #444;
+  line-height: 1.3;
+}
+
+/* Celular */
+@media (max-width: 650px){
+  .fila{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modulo{
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  .modulo span{
+    margin: 0;
+  }
+}
+
+.seccion-carrera {
+    background-color: white;
+}
+
